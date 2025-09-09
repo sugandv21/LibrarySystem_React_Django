@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qv(9375k+i*1u-j0)bjt29!%r4r_cwx0ez*aqsx2-za^a!%r+w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -58,7 +58,6 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:3000",
-    "https://sscoursemanagement.netlify.app"
 ]
 
 REST_FRAMEWORK = {
@@ -142,3 +141,4 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
